@@ -20,7 +20,7 @@ My work on ICD 11 Data was done using Python and Jupyter Notebook. To create a n
 
 The network trees were appended to a list. My next step was to extract the number of levels and the number of nodes per level in each tree. In addition, I also created a separate data.frame which sums the total number of nodes under each root disease. Both these data sets were exported as CSV files so that they can be used to create visualizations. Another question I wanted to explore that could prove useful was the number of nodes shared by two root diseases. This is another piece of information that could help researchers explore disease relationships. 
 
-![Disease Depth]()
+![Disease Depth](https://github.com/kevinchen27/icd11-dash-visualizations/blob/master/nodes%20per%20level.png)
 
 ## Visualizations with Dash
 
@@ -32,3 +32,5 @@ One of the dashboards I created was a bar plot which shows the number of nodes p
 ![Barplot 2](https://github.com/kevinchen27/icd11-dash-visualizations/blob/master/dash2.png)
 
 The most difficult dashboard graph I created was what is known as a Circos plot. Its difficulty was down to the complexity and length of its documentation and data format. A circos plot is useful because it shows you relationship between categories. In this case, the graph connects root nodes that have common nodes. This could give us an interesting preliminary insight which we might want to explore further. The thicker the bands, the greater the number of nodes in common.
+
+![Circos](https://github.com/kevinchen27/icd11-dash-visualizations/blob/master/circos.png)

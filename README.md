@@ -13,3 +13,21 @@ The purpose of the network graph data structure and node attributes is to allow 
 My work on ICD 11 Data was done using Python and Jupyter Notebook. To create a network graph, I first studied network structures and algorithms and trained myself in NetworkX, a Python package meant specifically for creating, manipulating and investigating network data. When creating nodes, I preserved the attributes of the nodes, namely ID, Title, Children, and Parents, which was saved as a Python dictionary in NetworkX. 
 
 ![Tree Creation](https://github.com/kevinchen27/dash-visualizations/blob/master/tree%20creation.png)
+
+The network trees were appended to a list. My next step was to extract the number of levels and the number of nodes per level in each tree. In addition, I also created a separate data.frame which sums the total number of nodes under each root disease. Both these data sets were exported as CSV files so that they can be used to create visualizations. Another question I wanted to explore that could prove useful was the number of nodes shared by two root diseases. This is another piece of information that could help researchers explore disease relationships. 
+
+![Disease Depth]()
+
+## Visualizations with Dash
+
+Dash is a dashboard visualization module by Plotly. Dash incorporates HTML and CSS components but in a Python-friendly manner which doesn’t require knowledge of the former. Its advantage over other Python visualization libraries like Plotly and Matlpotlib is that Dash enables you to create interactive graphics which can be integrated with Flask for a web application. Dash also requires the server to always be running so that visualizations can be updated according to the user's choice of selection. If there's one thing I learned from Dash's tutorials: you don't have to be an expert in memorizing Dash, but its more important to be an expert in looking up its documentation!
+
+One of the dashboards I created was a bar plot which shows the number of nodes per level for a selected root. As mentioned, the fun part about Dash is you can update the graph according to your choice, hence the implementation of a dropdown menu for my barplot that allows you to select which root tree you want to investigate.
+
+![Barplot](https://github.com/kevinchen27/icd11-dash-visualizations/blob/master/dash1.png)
+![Barplot 2](https://github.com/kevinchen27/icd11-dash-visualizations/blob/master/dash2.png)
+
+
+
+
+

@@ -11,3 +11,5 @@ The purpose of the network graph data structure and node attributes is to allow 
 ## Tree Creation and Data Manipulation
 
 My work on ICD 11 Data was done using Python and Jupyter Notebook. To create a network graph, I first studied network structures and algorithms and trained myself in NetworkX, a Python package meant specifically for creating, manipulating and investigating network data. When creating nodes, I preserved the attributes of the nodes, namely ID, Title, Children, and Parents, which was saved as a Python dictionary in NetworkX. 
+
+![Tree Creation](https://github.com/kevinchen27/dash-visualizations/blob/master/tree%20creation.png)
